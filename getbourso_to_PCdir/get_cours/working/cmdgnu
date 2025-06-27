@@ -1,0 +1,12 @@
+set title 'CARM - jeu. 26 juin 2025 22:24:21 CEST'
+set ylabel 'cours'
+set xlabel 'temps'
+set grid
+set term png
+set output 'CARM.png'
+plot '/home/getbourso/bin/get_cours/working/CARMplots_since.csv' with linespoints ls 1
+set title 'CARMVols - jeu. 26 juin 2025 22:24:21 CEST'
+set ylabel 'volume'
+set output 'CARMvols.png'
+plot '/home/getbourso/bin/get_cours/working/CARMplots_vols.csv' with linespoints ls 1
+

@@ -1,0 +1,4 @@
+. $(dirname $0)/config.cfg
+cd $BRS_HOME
+
+for code in $(cat .list_all_cods) ; do echo $code; ./get_cod.sh $code; sleep 1; ./trt_cod.sh $code; done

@@ -1,0 +1,77 @@
+#!/bin/bash
+#-- cree csv to plot =
+
+. $(dirname $0)/config.cfg
+cd $BRS_HOME
+cd working/
+
+COD=${1:-ATO}
+export COD
+
+ferror() {
+	code=$?
+	parm=$1
+	comm=$2
+	echo ERROR
+	echo " $comm : $code, $parm"
+	exit $code
+}
+
+# derrnier fichier .${COD}
+MDM=$(echo "$(date +%H) * 60" | bc)
+gzfile_cours=$(find -name \.${COD}-ALL\*csv.gz -mmin -${MDM} 2>/dev/null | grep gz || echo no)
+
+[ -f $gzfile_cours ] && gunzip $gzfile_cours 
+file_cours=$( (find -name \.${COD}-ALL\*csv -mmin -${MDM} | sort -h | tail -1 | xargs basename ) 2>/dev/null | grep csv || echo no)
+
+[ -f $file_cours ] && (head -n -3 $file_cours | grep -v ^heures > .${COD}plot.csv) || ferror 111 "Pas de fichier trouvé" && gzip $file_cours
+# première extraction "nettoyée" ^heur...
+
+# Min Max
+
+printf "1:OPEN\n2:MIN\n3:MAX\n4:CLOSE\n" | while read A; do LIGN=$(echo $A | cut -d":" -f1); TITR=$(echo $A | cut -d":" -f2); printf "$TITR "; sh ../getMinMax .${COD}plot.csv  | tr ',' ' ' | grep -n "[0-9]" | grep "${LIGN}:" | sed -e 's/[0-9]://'; 
+done
+
+# return 1 if UP 0 if down
+# ?
+OPEN=$( sh ../getMinMax .${COD}plot.csv  | tr ',' ' ' | head -n 1 | awk '{ print $2 }')
+CLOSE=$( sh ../getMinMax .${COD}plot.csv  | tr ',' ' ' | tail -n 1 | awk '{ print $2 }')
+#echo "$CLOSE >= $OPEN"
+DIFF=$(echo "$CLOSE >= $OPEN" |bc)
+#echo $DIFF "------"
+
+exit $DIFF
+
+#######################################################################
+#######################################################################
+#######################################################################
+
+#KOecho "1:OPEN\n2:MIN\n3:MAX\n4:CLOSE" | while IFS=":" read a b; do
+sh /home/vagrant/get_cours/getMinMax .${COD}plot.csv | tr ',' '	' | grep -n [1-9] | while read A B C D
+do
+val=$(echo $A | sed -e 's/:/;/' | cut -d";" -f2)
+num=$(echo $A | sed -e 's/:/;/' | cut -d";" -f1)
+lib=$(echo "1:OPEN\n2:MIN\n3:MAX\n4:CLOSE" | grep ^$num | cut -d":" -f2)
+echo $lib $val $B $C $D
+DIFF=$()
+done
+exit
+
+for col in $ARR; do
+echo $col 
+exit
+	COL=$(echo $col | sed 's/:/;/' | cut -d";" -f2 | tr ';' ':')
+	#if [ $a -eq 1  ] || [ $a -eq 4 ]; then COL="$col"; fi
+	echo "$b : $col" | grep "${a}:" | sed -s "s/$col/$COL/"
+done;done
+
+# 17h35 ?
+if [ $(grep -c "17:35" $file_cours) -gt 0 ]; then
+	FIRSTline=$(tac $file_cours | grep -n "17:35" | head -n 1 | awk -F":" '{ print $1 }')
+	NBlines=$(wc -l $file_cours | awk '{ print $1 }')
+	LASTtac=$(echo "$FIRSTline - $NBlines" | awk -F"-" '{ print $2 - $1 }')
+	VOLonEND=$(tac $file_cours | tail -n $LASTtac | awk -F',' '{ summ+=$3; } END{ print summ; }')
+	grep "17:35" $file_cours | head -n 1 | awk -v env_var="$VOLonEND" -F',' '{ print $1","$2","env_var }'
+	#VOLonEND=$(grep "17:35" $file_cours | awk -F',' '{ summ+=$3; } END{ print summ; }')
+fi
+

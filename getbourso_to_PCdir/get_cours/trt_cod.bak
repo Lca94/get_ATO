@@ -1,0 +1,148 @@
+#!/bin/bash
+#-- cree csv to plot =
+
+. $(dirname $0)/config.cfg
+cd $BRS_HOME
+cd working/
+
+[ -f ../.last_trt ] && cours=$(cat ../.last_trt)
+COD=${1:-${cours}}
+export COD
+
+echo Traitement $COD
+sleep .3
+echo ...
+sleep 2
+echo "-- Démarrage --"
+
+# derrnier fichier .${COD}
+file_cours=$(find -name \.${COD}-\*csv -mtime 0 | sort -h | tail -1 | xargs basename)
+
+echo "Fichiers trouvés : $(echo $file_cours | xargs echo)"
+
+#mv si 9h00 dans le dernier fichier :
+#MinuteDepuisMinuit=$(echo "$(date +%H) * 60" | bc)
+MDM=$(echo "$(date +%H) * 60" | bc)
+# pb si on est le lendemain :: [ $(date +%H) -le 6 ] && MDM=$(echo "$(date +%H) * 60" | bc)
+export MDM 
+#echo $MDM
+echo "---"
+
+unset AllFiles
+AllFiles=$(find -name \.${COD}-\*csv -mmin -${MDM:-1440} -exec basename {} \; | sort -h)
+
+#trace off grep -l "\r" $AllFiles >/dev/null && sed -i 's/\r/ /g' $AllFiles 
+#trace off grep -l " " $AllFiles >/dev/null && sed -i 's/ / /g' $AllFiles 
+
+#trace off find -name \.${COD}-\*csv -mmin -${MDM:-1440} -exec basename {} \; | sort -h
+echo " Tous les fichiers présents : $( echo $AllFiles |tr '\n' ' ')"
+
+#grep -l " " $AllFiles
+#for file in ${AllFiles}; do sed -i 's/ / /g' $file; done
+#grep -l " " $AllFiles
+#grep -l " " $AllFiles && (echo "Netoyage nécessaire ...waiting"; for file in ${AllFiles}; do sed -i 's/ / /g' $file; done; grep -l " " $AllFiles && echo "Netoyage OK") || echo "Nettoyage inutile : pas de ^M détecté"
+
+#check all datses in file of the day
+echo check dates
+for file in ${AllFiles}; do
+	deb=$(grep -v ^$ $file | grep -v ^# | tail -n 1)
+	fin=$(head -n 2 $file | tail -n 1)
+	echo "$file $deb $fin"
+done | while read a b c; do 
+	(echo $a; grep -n "$b" $a | tail -n 1; grep -n "$c" $a | head -n 1) | xargs echo 
+done
+
+function toutenun() {
+###truncate -s 0 .maxValue; AllFiles=".VIV1 .VIV2 .VIV3"; for file in ${AllFiles}; do deb=$(grep -v ^$ $file | grep -v ^# | tail -n 1); fin=$(head -n 2 $file | tail -n 1); echo "$file $deb $fin"; done | while read a b c; do maxValue=$((echo $b; cat .maxValue) | sort -h | tail -n 1); echo "$c" > .maxValue; echo "$a $b $c $maxValue"; done | while read file deb fin prec; do echo $file; tac $file | grep -n "$deb" | head -n 1; echo "valeur ci-dessus ignorée";  tac $file | grep -n "$prec" | tail -n 1; tac $file | grep -n "$fin" | tail -n 1; done
+
+truncate -s 0 .maxValue; for file in ${AllFiles}; do deb=$(grep -v ^$ $file | grep -v ^# | tail -n 1); fin=$(head -n 2 $file | tail -n 1); echo "$file $deb $fin"; done | while read a b c; do maxValue=$((echo $b; cat .maxValue) | sort -h | tail -n 1); echo "$c" > .maxValue; echo "$a $b $c $maxValue"; done | while read file deb fin prec; do ldeb=$(tac $file | grep -n "$prec" | head -n 1 |cut -d":" -f1); lfin=$(tac $file | grep -n "$fin" | tail -n 1 | cut -d":" -f1); NbL=$(echo "$lfin - $ldeb + 1" |bc); tac $file | tail -n ${NbL} | grep -v ^heur; done | tac > ${COD}plot.csv
+
+}
+
+function toutenunKO() {
+MDM=$(echo "$(date +%H) * 60" | bc)
+unset filemax; for file in ${AllFiles}; do deb=$(grep -v ^$ $file | grep -v ^# | tail -n 1); fin=$(head -n 2 $file | tail -n 1); echo "$file $deb $fin"; done | while read a b c; do (echo $a; grep -n "$b" $a | tail -n 1; grep -n "$c" $a | head -n 1) | xargs echo ; done | while read file deb fin
+do
+	# chercher les lignes entre deb et fin seulement
+	#echo "FileMax précédent $filemax"
+	nbD=$(echo $deb | cut -d":" -f1)
+	nbF=$(echo $fin | cut -d":" -f1)
+	#echo $file $nbD $nbF
+	#! [ -z $filemax ] && echo SeeDown || echo Fnull
+	#[ -z $filemax ] || grep -n "$filemax" $file | tail -n 1
+	[ -z $filemax ] || deb=$(grep -n "$filemax" $file | tail -n 1)
+	nbD=$(grep -n "$filemax" $file | tail -n 1 | cut -d":" -f1)
+	#echo $deb $nbD
+	filemax=$(tail -n +${nbF} $file | head -n $nbD | head -n1)
+	#echo $filemax
+	(tail -n +${nbF} $file | head -n $nbD) | tac
+	#echo " *** $file $nbD $nbF ***"
+done | grep -v ^$ | grep -v ^# |tac > ${COD}plot.csv
+}
+
+# concatener les fichiers par chrono
+toutenun
+
+# garder le zip du all / remplacer par le nouveau concat
+[ -f .${COD}-ALL-$(date +%Y%m%d).csv.gz ] && gunzip .${COD}-ALL-$(date +%Y%m%d).csv.gz
+cat ${COD}plot.csv > .${COD}-ALL-$(date +%Y%m%d).csv && gzip .${COD}-ALL-$(date +%Y%m%d).csv
+
+#grep -c "09:00" $file_cours >/dev/null && ( for file in $(find -name \.${COD}-\*csv -mmin -${MDM} | grep -v $file_cours); do mv -v $file /tmp; done )
+
+# première extraction "nettoyée"
+#head -n -3 $file_cours | grep -v ^heures > ${COD}plot.csv
+
+# à revoir pour éviter de mélanger si même date : # par exemple ajouter une première colonne avec le numéro de ligne pour retrier et sortir cette colonne à la place de la date ? # head -qn -3 $(find -name \.${COD}\*.csv -mmin -480 | sort -h) | grep -v ^heures | sort -h | tac > test && awk '!x[$0]++' test > ${COD}plot.csv
+
+# Min Max
+#sh getMinMax ${COD}plot.csv
+#version avec titres
+echo
+echo "Stats Début / Fin Min Max"
+echo "-------------------------"
+sh ../getHighLess ${COD}
+RETUPDOWN=$?
+#echo " --- $RETUPDOWN ---"
+[ $RETUPDOWN -eq 0 ] && COMMENT=" DOWN !" || COMMENT=" UP !"
+#echo " --- $COMMENT ---"
+
+# Affiche volum total
+printf "Volume total : %' 20.0f %s\n" $(awk -F',' 'BEGIN { VOLSUM=0 } { VOLSUM+=$3 } END { print VOLSUM }' ${COD}plot.csv) "$COMMENT"
+
+# 17h35 ?
+if [ $(cat ${COD}.csv | grep -c "17:35" | cut -d":" -f1) -gt 0 ]; then
+	file_end=${COD}plot.csv
+cp $file_end .${COD}-ALL-$(date +%Y%m%d).csv && gzip -f .${COD}-ALL-$(date +%Y%m%d).csv
+	FIRSTline=$(tac $file_end | grep -n "17:35" | head -n 1 | awk -F":" '{ print $1 }')
+	NBlines=$(wc -l $file_end | awk '{ print $1 }')
+	LASTtac=$(echo "$FIRSTline - $NBlines" | awk -F"-" '{ print $2 - $1 }')
+	VOLonEND=$(tac $file_end | tail -n $LASTtac | awk -F',' '{ summ+=$3; } END{ print summ; }')
+	grep "17:35" $file_end | head -n 1 | awk -v env_var="$VOLonEND" -F',' '{ print $1","$2","env_var }'
+	#VOLonEND=$(grep "17:35" $file_end | awk -F',' '{ summ+=$3; } END{ print summ; }')
+fi
+
+#csv plot Cours inversé
+( while IFS=',' read a b c; do echo "$b,$(date --date=$a +%s)"; done ) < ${COD}plot.csv | tac > ${COD}plots_since.csv
+
+#csv plot Volume inversé
+( while IFS=',' read a b c; do echo "$c,$(date --date=$a +%s)"; done ) < ${COD}plot.csv | tac > ${COD}plots_vols.csv
+
+echo "set title '${COD} - $(date)'
+set ylabel 'cours'
+set xlabel 'temps'
+set grid
+set term png
+set output '${COD}.png'
+plot '$BRS_HOME/working/${COD}plots_since.csv' with linespoints ls 1
+set title '${COD}Vols - $(date)'
+set ylabel 'volume'
+set output '${COD}vols.png'
+plot '$BRS_HOME/working/${COD}plots_vols.csv' with linespoints ls 1
+" > cmdgnu
+
+gnuplot cmdgnu
+
+sleep 0.1
+#DISPLAY=getBourso:11.0
+#export DISPLAY
+display ${COD}.png & display ${COD}vols.png &

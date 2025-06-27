@@ -1,0 +1,6 @@
+. $(dirname $0)/config.cfg
+cd $BRS_HOME
+
+export last=$(cat .list_all_cods | grep -v ^$ | tail -n 1)
+for code in $(cat .list_all_cods) ; do clear; echo $code; sh ./getHighLess $code; ./voir_PNG.sh $code; echo $last, $code; if [ "$last" != "$code" ]; then printf "ENTER to next"; read next; fi; done
+

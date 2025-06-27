@@ -1,0 +1,5 @@
+IFS=','
+tail -n 1 $1
+awk -F',' 'min=="" || $2 < min {min=$2} END{print min}' $1
+awk -F',' 'max=="" || $2 > max {max=$2} END{print max}' $1
+head -n 1 $1

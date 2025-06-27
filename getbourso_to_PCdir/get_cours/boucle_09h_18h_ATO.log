@@ -1,0 +1,783 @@
+nohup: les entrées sont ignorées
+ven. 16 févr. 2024 14:40:36 CET
+14
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  5 2083k    5  119k    0     0   297k      0  0:00:07 --:--:--  0:00:07  296k 53 2083k   53 1119k    0     0   810k      0  0:00:02  0:00:01  0:00:01  809k100 2083k  100 2083k    0     0   961k      0  0:00:02  0:00:02 --:--:--  961k
+...
+09:24:44,2.5170,1545
+09:24:44,2.5170,1160
+
+
+###
+heures,cours,quantité
+14:33:10,2.3690,150
+.
+./working
+./working/.ATO-20240216_144041.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 53 2083k   53 1111k    0     0  1084k      0  0:00:01  0:00:01 --:--:-- 1084k100 2083k  100 2083k    0     0  1182k      0  0:00:01  0:00:01 --:--:-- 1182k
+...
+09:25:13,2.5240,330
+09:25:13,2.5240,1513
+
+
+###
+heures,cours,quantité
+14:36:33,2.3570,318
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_144548.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 2083k    0 15782    0     0  60700      0  0:00:35 --:--:--  0:00:35 60467 49 2083k   49 1024k    0     0   812k      0  0:00:02  0:00:01  0:00:01  811k100 2083k  100 2083k    0     0   966k      0  0:00:02  0:00:02 --:--:--  966k
+...
+09:25:13,2.5240,9
+09:25:13,2.5240,330
+
+
+###
+heures,cours,quantité
+14:39:56,2.3630,175
+./working
+./working/.ATO-20240216_145053.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11 2083k   11  231k    0     0   214k      0  0:00:09  0:00:01  0:00:08  214k 28 2083k   28  583k    0     0   280k      0  0:00:07  0:00:02  0:00:05  280k 44 2083k   44  919k    0     0   299k      0  0:00:06  0:00:03  0:00:03  299k 56 2083k   56 1184k    0     0   290k      0  0:00:07  0:00:04  0:00:03  290k 73 2083k   73 1536k    0     0   302k      0  0:00:06  0:00:05  0:00:01  309k 97 2083k   97 2023k    0     0   333k      0  0:00:06  0:00:06 --:--:--  358k100 2083k  100 2083k    0     0   339k      0  0:00:06  0:00:06 --:--:--  370k
+...
+09:25:38,2.5060,2500
+09:25:38,2.5090,313
+
+
+###
+heures,cours,quantité
+14:44:15,2.3510,250
+./working
+./working/.ATO-20240216_145602.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 2083k    8  167k    0     0   176k      0  0:00:11 --:--:--  0:00:11  176k 21 2083k   21  455k    0     0   233k      0  0:00:08  0:00:01  0:00:07  233k 32 2083k   32  672k    0     0   227k      0  0:00:09  0:00:02  0:00:07  227k 52 2083k   52 1088k    0     0   275k      0  0:00:07  0:00:03  0:00:04  275k 62 2083k   62 1312k    0     0   265k      0  0:00:07  0:00:04  0:00:03  265k 79 2083k   79 1664k    0     0   279k      0  0:00:07  0:00:05  0:00:02  298k 85 2083k   85 1792k    0     0   257k      0  0:00:08  0:00:06  0:00:02  267k 89 2083k   89 1871k    0     0   230k      0  0:00:09  0:00:08  0:00:01  231k 89 2083k   89 1872k    0     0   198k      0  0:00:10  0:00:09  0:00:01  143k 89 2083k   89 1872k    0     0   179k      0  0:00:11  0:00:10  0:00:01  102k 89 2083k   89 1872k    0     0   163k      0  0:00:12  0:00:11  0:00:01 38988 89 2083k   89 1872k    0     0   150k      0  0:00:13  0:00:12  0:00:01 14973 89 2083k   89 1872k    0     0   139k      0  0:00:14  0:00:13  0:00:01   134 89 2083k   89 1872k    0     0   129k      0  0:00:16  0:00:14  0:00:02     0 90 2083k   90 1895k    0     0   122k      0  0:00:16  0:00:15  0:00:01  4842100 2083k  100 2083k    0     0   132k      0  0:00:15  0:00:15 --:--:-- 49884
+...
+09:25:38,2.5060,2500
+09:25:38,2.5090,313
+
+
+###
+heures,cours,quantité
+14:44:15,2.3510,250
+./working
+./working/.ATO-20240216_150123.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  3 2083k    3 73366    0     0   306k      0  0:00:06 --:--:--  0:00:06  304k 70 2083k   70 1463k    0     0  1203k      0  0:00:01  0:00:01 --:--:-- 1202k100 2083k  100 2083k    0     0  1302k      0  0:00:01  0:00:01 --:--:-- 1301k
+...
+09:25:38,2.5060,2500
+09:25:38,2.5090,313
+
+
+###
+heures,cours,quantité
+14:44:15,2.3510,250
+./working
+./working/.ATO-20240216_150627.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 36 2083k   36  768k    0     0   876k      0  0:00:02 --:--:--  0:00:02  875k100 2083k  100 2083k    0     0  1158k      0  0:00:01  0:00:01 --:--:-- 1158k
+...
+09:25:38,2.5060,2500
+09:25:38,2.5090,313
+
+
+###
+heures,cours,quantité
+14:44:15,2.3510,250
+./working
+./working/.ATO-20240216_151132.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 72 2083k   72 1504k    0     0  1344k      0  0:00:01  0:00:01 --:--:-- 1342k100 2083k  100 2083k    0     0  1323k      0  0:00:01  0:00:01 --:--:-- 1323k
+...
+09:30:19,2.5000,1
+09:30:08,2.4950,923
+
+
+###
+heures,cours,quantité
+15:06:07,2.3500,309
+./working
+./working/.ATO-20240216_151637.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 12 2083k   12  263k    0     0   720k      0  0:00:02 --:--:--  0:00:02  718k 84 2083k   84 1767k    0     0  1297k      0  0:00:01  0:00:01 --:--:-- 1296k100 2083k  100 2083k    0     0  1329k      0  0:00:01  0:00:01 --:--:-- 1328k
+...
+09:31:17,2.5080,250
+09:31:14,2.5200,9920
+
+
+###
+heures,cours,quantité
+15:15:58,2.3620,1247
+./working
+./working/.ATO-20240216_152141.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 36 2083k   36  759k    0     0  1010k      0  0:00:02 --:--:--  0:00:02 1008k100 2083k  100 2083k    0     0  1265k      0  0:00:01  0:00:01 --:--:-- 1265k
+...
+09:30:46,2.5200,2432
+09:30:46,2.5200,568
+
+
+###
+heures,cours,quantité
+15:11:17,2.3510,105
+./working
+./working/.ATO-20240216_152646.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 46 2083k   46  959k    0     0  1118k      0  0:00:01 --:--:--  0:00:01 1118k100 2083k  100 2083k    0     0  1300k      0  0:00:01  0:00:01 --:--:-- 1300k
+...
+09:31:44,2.5100,9
+09:31:33,2.5100,41
+
+
+###
+heures,cours,quantité
+15:19:23,2.3560,200
+./working
+./working/.ATO-20240216_153151.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 59 2083k   59 1239k    0     0  1182k      0  0:00:01  0:00:01 --:--:-- 1181k100 2083k  100 2083k    0     0  1344k      0  0:00:01  0:00:01 --:--:-- 1343k
+...
+09:31:48,2.4960,250
+09:31:48,2.4960,250
+
+
+###
+heures,cours,quantité
+15:26:34,2.3620,80
+./working
+./working/.ATO-20240216_153655.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 2083k    1 40598    0     0  78526      0  0:00:27 --:--:--  0:00:27 78374 14 2083k   14  303k    0     0   206k      0  0:00:10  0:00:01  0:00:09  206k 28 2083k   28  599k    0     0   241k      0  0:00:08  0:00:02  0:00:06  241k 38 2083k   38  800k    0     0   230k      0  0:00:09  0:00:03  0:00:06  230k 56 2083k   56 1175k    0     0   263k      0  0:00:07  0:00:04  0:00:03  263k 71 2083k   71 1488k    0     0   271k      0  0:00:07  0:00:05  0:00:02  292k 88 2083k   88 1839k    0     0   284k      0  0:00:07  0:00:06  0:00:01  307k100 2083k  100 2083k    0     0   303k      0  0:00:06  0:00:06 --:--:--  339k
+...
+09:33:00,2.5000,1747
+09:33:00,2.5000,49
+
+
+###
+heures,cours,quantité
+15:35:02,2.3510,60
+./working
+./working/.ATO-20240216_154205.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10 2083k   10  215k    0     0   254k      0  0:00:08 --:--:--  0:00:08  254k 27 2083k   27  576k    0     0   310k      0  0:00:06  0:00:01  0:00:05  310k 41 2083k   41  871k    0     0   302k      0  0:00:06  0:00:02  0:00:04  302k 61 2083k   61 1287k    0     0   334k      0  0:00:06  0:00:03  0:00:03  334k 76 2083k   76 1591k    0     0   328k      0  0:00:06  0:00:04  0:00:02  328k 95 2083k   95 1991k    0     0   340k      0  0:00:06  0:00:05  0:00:01  354k100 2083k  100 2083k    0     0   335k      0  0:00:06  0:00:06 --:--:--  346k
+...
+09:33:40,2.5000,831
+09:33:33,2.5000,120
+
+
+###
+heures,cours,quantité
+15:40:08,2.3510,460
+./working
+./working/.ATO-20240216_154714.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 16 2083k   16  336k    0     0   341k      0  0:00:06 --:--:--  0:00:06  341k 37 2083k   37  791k    0     0   402k      0  0:00:05  0:00:01  0:00:04  402k 53 2083k   53 1111k    0     0   374k      0  0:00:05  0:00:02  0:00:03  374k 69 2083k   69 1447k    0     0   363k      0  0:00:05  0:00:03  0:00:02  363k 90 2083k   90 1888k    0     0   379k      0  0:00:05  0:00:04  0:00:01  379k100 2083k  100 2083k    0     0   369k      0  0:00:05  0:00:05 --:--:--  375k
+...
+09:33:49,2.5000,50
+09:33:49,2.5000,49
+
+
+###
+heures,cours,quantité
+15:46:05,2.3590,500
+./working
+./working/.ATO-20240216_155222.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 42 2083k   42  880k    0     0  1184k      0  0:00:01 --:--:--  0:00:01 1182k100 2083k  100 2083k    0     0  1430k      0  0:00:01  0:00:01 --:--:-- 1430k
+...
+09:34:23,2.5030,250
+09:34:08,2.5050,382
+
+
+###
+heures,cours,quantité
+15:51:57,2.3600,64
+./working
+./working/.ATO-20240216_155726.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10 2083k   10  215k    0     0   576k      0  0:00:03 --:--:--  0:00:03  575k 98 2083k   98 2047k    0     0  1484k      0  0:00:01  0:00:01 --:--:-- 1483k100 2083k  100 2083k    0     0  1493k      0  0:00:01  0:00:01 --:--:-- 1492k
+...
+09:34:40,2.4990,1855
+09:34:40,2.5000,625
+
+
+###
+heures,cours,quantité
+15:53:48,2.3600,75
+./working
+./working/.ATO-20240216_160231.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 11 2083k   11  247k    0     0   212k      0  0:00:09  0:00:01  0:00:08  212k 34 2083k   34  719k    0     0   322k      0  0:00:06  0:00:02  0:00:04  321k 89 2083k   89 1855k    0     0   594k      0  0:00:03  0:00:03 --:--:--  594k100 2083k  100 2083k    0     0   649k      0  0:00:03  0:00:03 --:--:--  649k
+...
+09:31:56,2.4880,541
+09:31:49,2.4960,1200
+
+
+###
+heures,cours,quantité
+15:30:27,2.3570,373
+./working
+./working/.ATO-20240216_160737.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 65 2083k   65 1367k    0     0  1351k      0  0:00:01  0:00:01 --:--:-- 1350k100 2083k  100 2083k    0     0  1548k      0  0:00:01  0:00:01 --:--:-- 1546k
+...
+09:34:56,2.4720,250
+09:34:56,2.4700,712
+
+
+###
+heures,cours,quantité
+16:06:49,2.3340,80
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_161241.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 47 2083k   47  983k    0     0  1413k      0  0:00:01 --:--:--  0:00:01 1411k100 2083k  100 2083k    0     0  1782k      0  0:00:01  0:00:01 --:--:-- 1784k
+...
+09:35:07,2.4520,9360
+09:35:07,2.4520,7640
+
+
+###
+heures,cours,quantité
+16:10:01,2.3440,25
+./working
+./working/.ATO-20240216_161745.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 41 2083k   41  864k    0     0  1337k      0  0:00:01 --:--:--  0:00:01 1335k100 2083k  100 2083k    0     0  1616k      0  0:00:01  0:00:01 --:--:-- 1616k
+...
+09:35:07,2.4360,5000
+09:35:07,2.4370,2408
+
+
+###
+heures,cours,quantité
+16:17:14,2.3440,50
+./working
+./working/.ATO-20240216_162249.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 32 2083k   32  672k    0     0   997k      0  0:00:02 --:--:--  0:00:02  995k100 2083k  100 2083k    0     0  1452k      0  0:00:01  0:00:01 --:--:-- 1452k
+...
+09:34:50,2.4990,40
+09:34:46,2.4990,235
+
+
+###
+heures,cours,quantité
+16:01:48,2.3460,3710
+./working
+./working/.ATO-20240216_162753.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 12 2083k   12  256k    0     0   984k      0  0:00:02 --:--:--  0:00:02  980k100 2083k  100 2083k    0     0  1899k      0  0:00:01  0:00:01 --:--:-- 1899k
+...
+09:35:07,2.4350,1267
+09:35:07,2.4350,245
+
+
+###
+heures,cours,quantité
+16:22:40,2.3470,500
+./working
+./working/.ATO-20240216_163257.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 97 2083k   97 2023k    0     0  1775k      0  0:00:01  0:00:01 --:--:-- 1773k100 2083k  100 2083k    0     0  1794k      0  0:00:01  0:00:01 --:--:-- 1793k
+...
+09:35:37,2.4490,231
+09:35:37,2.4480,226
+
+
+###
+heures,cours,quantité
+16:26:48,2.3480,79
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_163802.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 98 2083k   98 2047k    0     0  1902k      0  0:00:01  0:00:01 --:--:-- 1902k100 2083k  100 2083k    0     0  1913k      0  0:00:01  0:00:01 --:--:-- 1913k
+...
+09:35:47,2.4380,249
+09:35:47,2.4380,2300
+
+
+###
+heures,cours,quantité
+16:31:20,2.3510,30
+./working
+./working/.ATO-20240216_164306.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 79 2083k   79 1655k    0     0  1682k      0  0:00:01 --:--:--  0:00:01 1682k100 2083k  100 2083k    0     0  1810k      0  0:00:01  0:00:01 --:--:-- 1810k
+...
+09:36:25,2.4500,924
+09:36:25,2.4500,1580
+
+
+###
+heures,cours,quantité
+16:36:59,2.3520,250
+./working
+./working/.ATO-20240216_164810.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 44 2083k   44  919k    0     0  1182k      0  0:00:01 --:--:--  0:00:01 1180k100 2083k  100 2083k    0     0  1578k      0  0:00:01  0:00:01 --:--:-- 1578k
+...
+09:37:09,2.4320,6000
+09:37:09,2.4320,230
+
+
+###
+heures,cours,quantité
+16:48:00,2.3560,219
+./working
+./working/.ATO-20240216_165314.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 41 2083k   41  871k    0     0  1234k      0  0:00:01 --:--:--  0:00:01 1232k100 2083k  100 2083k    0     0  1633k      0  0:00:01  0:00:01 --:--:-- 1633k
+...
+09:37:48,2.4280,250
+09:37:48,2.4300,1060
+
+
+###
+heures,cours,quantité
+16:51:17,2.3530,170
+./working
+./working/.ATO-20240216_165818.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 29 2083k   29  608k    0     0  1178k      0  0:00:01 --:--:--  0:00:01 1176k100 2083k  100 2083k    0     0  1688k      0  0:00:01  0:00:01 --:--:-- 1688k
+...
+09:36:25,2.4530,1096
+09:36:25,2.4520,250
+
+
+###
+heures,cours,quantité
+16:42:09,2.3540,10
+./working
+./working/.ATO-20240216_170322.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 42 2083k   42  887k    0     0  1400k      0  0:00:01 --:--:--  0:00:01 1397k100 2083k  100 2083k    0     0  1761k      0  0:00:01  0:00:01 --:--:-- 1761k
+...
+09:38:30,2.4110,2287
+09:38:30,2.4100,2287
+
+
+###
+heures,cours,quantité
+17:02:59,2.3660,500
+./working
+./working/.ATO-20240216_170826.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 50 2083k   50 1047k    0     0  1204k      0  0:00:01 --:--:--  0:00:01 1202k100 2083k  100 2083k    0     0  1410k      0  0:00:01  0:00:01 --:--:-- 1410k
+...
+09:39:31,2.4160,1231
+09:39:31,2.4160,303
+
+
+###
+heures,cours,quantité
+17:08:18,2.3570,660
+./working
+./working/.ATO-20240216_171330.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 29 2083k   29  615k    0     0   977k      0  0:00:02 --:--:--  0:00:02  975k100 2083k  100 2083k    0     0  1418k      0  0:00:01  0:00:01 --:--:-- 1418k
+...
+09:38:27,2.4100,3
+09:38:08,2.4120,700
+
+
+###
+heures,cours,quantité
+16:57:49,2.3670,230
+./working
+./working/.ATO-20240216_171834.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 29 2083k   29  607k    0     0  1128k      0  0:00:01 --:--:--  0:00:01 1126k100 2083k  100 2083k    0     0  1479k      0  0:00:01  0:00:01 --:--:-- 1480k
+...
+09:42:18,2.4080,1600
+09:42:18,2.4120,2245
+
+
+###
+heures,cours,quantité
+17:13:24,2.3600,210
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_172338.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 21 2083k   21  447k    0     0   957k      0  0:00:02 --:--:--  0:00:02  955k100 2083k  100 2083k    0     0  1660k      0  0:00:01  0:00:01 --:--:-- 1660k
+...
+09:44:04,2.4080,269
+09:44:04,2.4080,269
+
+
+###
+heures,cours,quantité
+17:18:09,2.3830,121
+./working
+./working/.ATO-20240216_172842.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9 2083k    9  192k    0     0   738k      0  0:00:02 --:--:--  0:00:02  738k100 2083k  100 2083k    0     0  1786k      0  0:00:01  0:00:01 --:--:-- 1788k
+...
+09:46:01,2.4160,2082
+09:46:01,2.4170,2348
+
+
+###
+heures,cours,quantité
+17:23:19,2.3770,3510
+./working
+./working/.ATO-20240216_173347.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 2083k    0 15782    0     0   109k      0  0:00:19 --:--:--  0:00:19  108k 94 2083k   94 1975k    0     0  1739k      0  0:00:01  0:00:01 --:--:-- 1737k100 2083k  100 2083k    0     0  1764k      0  0:00:01  0:00:01 --:--:-- 1762k
+...
+09:50:01,2.3950,1950
+09:50:01,2.3950,391
+
+
+###
+heures,cours,quantité
+17:29:59,2.3580,15
+./working
+./working/.ATO-20240216_173851.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 84 2083k   84 1767k    0     0  1659k      0  0:00:01  0:00:01 --:--:-- 1659k100 2083k  100 2083k    0     0  1676k      0  0:00:01  0:00:01 --:--:-- 1674k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,79
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_174355.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 67 2083k   67 1408k    0     0  1547k      0  0:00:01 --:--:--  0:00:01 1547k100 2083k  100 2083k    0     0  1755k      0  0:00:01  0:00:01 --:--:-- 1755k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,79
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/.ATO-20240216_174859.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 89 2083k   89 1872k    0     0  1769k      0  0:00:01  0:00:01 --:--:-- 1767k100 2083k  100 2083k    0     0  1826k      0  0:00:01  0:00:01 --:--:-- 1824k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_175403.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 89 2083k   89 1855k    0     0  1675k      0  0:00:01  0:00:01 --:--:-- 1674k100 2083k  100 2083k    0     0  1727k      0  0:00:01  0:00:01 --:--:-- 1727k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/.ATO-20240216_175907.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 67 2083k   67 1406k    0     0  1480k      0  0:00:01 --:--:--  0:00:01 1479k100 2083k  100 2083k    0     0  1622k      0  0:00:01  0:00:01 --:--:-- 1622k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/.ATO-20240216_180411.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 90 2083k   90 1886k    0     0  1890k      0  0:00:01 --:--:--  0:00:01 1888k100 2083k  100 2083k    0     0  1931k      0  0:00:01  0:00:01 --:--:-- 1931k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/.ATO-20240216_180915.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2083k  100 2083k    0     0  1904k      0  0:00:01  0:00:01 --:--:-- 1904k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_181419.csv
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 31 2083k   31  663k    0     0   627k      0  0:00:03  0:00:01  0:00:02  627k 82 2083k   82 1727k    0     0   839k      0  0:00:02  0:00:02 --:--:--  838k100 2083k  100 2083k    0     0   708k      0  0:00:02  0:00:02 --:--:--  707k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/.ATO-20240216_181926.csv
+./working/ATO.csv
+./working/ATO.html
+./boucle_09h_18h_ATO.log
+./.last_trt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 33 2083k   33  688k    0     0  1120k      0  0:00:01 --:--:--  0:00:01 1118k100 2083k  100 2083k    0     0  1599k      0  0:00:01  0:00:01 --:--:-- 1599k
+...
+09:53:56,2.3900,250
+09:53:56,2.3900,250
+
+
+###
+heures,cours,quantité
+17:38:38,2.3530,424
+./working
+./working/cmdgnu
+./working/ATOplots_vols.csv
+./working/.ATOplot.csv
+./working/ATO.png
+./working/ATOplots_since.csv
+./working/.ATO-ALL-20240216.csv.gz
+./working/.ATO-20240216_182414.csv
+./working/.maxValue
+./working/ATOplot.csv
+./working/ATOvols.png
+./working/.ATO-20240216_182431.csv
+./working/.ATO.html
+./working/VIV.html
+./working/ATO.csv
+./working/ATO.html
+./working/.ATO-20240216_182332.csv
+./boucle_09h_18h_ATO.log
+./.last_trt

@@ -1,0 +1,4 @@
+#!/bin/bash
+truncate -s 0 .maxValue; echo " .VIV-20230816_091930.csv 09:00:15,8.0580,130  09:19:04,8.0300,550
+.VIV-20230816_172905.csv 09:00:15,8.0580,130 17:29:55,8.0480,9
+.VIV-20230816_194005.csv 09:00:15,8.0580,130 17:35:17,8.0580,4347" | while read a b c; do deb=$(grep -n "$c" $a | head -n 1 | cut -d":" -f1); fin=$(grep -n "$b" $a | tail -n 1 | cut -d":" -f1); echo "$a $deb $fin $(grep -n "$b" $a | tail -n 1)"; done | while read file deb fin max; do maxValue=$((echo $max | cut -d":" -f2; cat .maxValue) | sort -h | tail -n 1); echo "maxV=$maxValue"; echo ":::"; ((grep -v ^heur $file | head -n -2) | head -n 100000; (grep -v ^heur $file | tail -n -${fin} | tail -n 100000)) | tac; done

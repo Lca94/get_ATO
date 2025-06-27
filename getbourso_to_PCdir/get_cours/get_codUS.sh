@@ -1,0 +1,45 @@
+#install python3
+#sudo pip3 install beautifulsoup4
+
+. $(dirname $0)/config.cfg
+cd $BRS_HOME
+cd working/
+
+COD=${1:-ATO}
+export COD
+#tCOD=1rP
+tCOD=""
+
+#check if OD is US
+grep $COD .listUS 1>/dev/null 2>&1 && tCOD=""
+
+find -name \.${COD}\*csv -mtime +0 -exec gzip -f {} \;
+
+cp -p ${COD}.html .${COD}.html || touch .${COD}.html
+sync
+sleep .3
+rm -f ${COD}.html
+sync
+sleep .2
+curl -o ${COD}.html https://www.boursorama.com/cours/${tCOD}${COD}/_toutes-les-transactions?limit=2000o
+# RL =  .... pfff quels cons #curl -o ${COD}.html https://www.boursorama.com/cours/${COD}/_toutes-les-transactions?limit=2000o
+sync
+sleep .2
+diff ${COD}.html .${COD}.html >/dev/null
+if [ $? -gt 0 ]; then
+# traitement si différent
+#grep th ${COD} > ${COD}.csv
+#grep -E "tr|td" ${COD} | cut -c1-40 | tr '.' ',' | tr -d ' ' | sed -e 's/$/;/g' | sed -e 's/^;$/_;_/g' | tr -d '\n' | sed -e 's/_;__;__;_/\n/g' | sed -e 's/_;_/;/g' | sed -e 's:</tr;;;:</tr;;;\n:' >> ${COD}.html
+cat ${COD}.html | html2csv.py > ${COD}.csv
+sed -i 's/ //g' ${COD}.csv
+cat ${COD}.csv
+cp ${COD}.csv .${COD}-$(date +%Y%m%d_%H%M%S).csv
+else
+mv .${COD}.html ${COD}.html
+echo "Pas de différence avec ${COD}.html / ${COD}.csv"
+fi
+echo "..."
+tail -n 5 ${COD}.csv
+head -n 2 ${COD}.csv
+
+echo ${COD} > ../.last_trt
